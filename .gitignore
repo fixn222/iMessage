@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Build output
+dist/
+build/
+out/
+.next/
+.vercel/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Package managers
+.pnp
+.pnp.js
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Temporary files
+tmp/
+temp/
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+
+# Databases
+*.sqlite
+*.sqlite3
+
+# Uploads
+uploads/
+public/uploads/
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+jest-cache/
+playwright-report/
+test-results/
+
+# Docker
+docker-compose.override.yml
+
+# Turborepo
+.turbo/
+
+# Storybook
+storybook-static/
+
+# Bun
+bun.lockb
+
+# Sentry
+.sentryclirc
+
+# Firebase
+.firebase/
+
+# Linux binaries and compiled files
+*.o
+*.out
+*.so
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+
+# Ignore generated files
+generated/
