@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "build": "rm -rf dist && cp -R src dist",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
