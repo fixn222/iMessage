@@ -28,6 +28,8 @@ app.get("/health", (req, res) => {
   res.status(200).json({ ok: true });
 });
 
+app.use("api/auht", authRoutes);
+
 //if the public directory exsist , serve the static files
 if (fs.existsSync(publicDir)) {
   app.use(express.static(publicDir));
