@@ -6,6 +6,7 @@ import cors from "cors";
 import fs from "fs";
 import path from "path";
 import clerkWebhook from "./webhooks/clerk.webhook.js";
+import messageRoutes from "./routes/message.route.js";
 dotenv.config();
 const app = express();
 
@@ -29,6 +30,7 @@ app.get("/health", (req, res) => {
 });
 
 app.use("api/auht", authRoutes);
+app.use("/api/messages", messageRoutes);
 
 //if the public directory exsist , serve the static files
 if (fs.existsSync(publicDir)) {
