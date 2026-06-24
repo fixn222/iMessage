@@ -7,8 +7,9 @@ import fs from "fs";
 import path from "path";
 import clerkWebhook from "./webhooks/clerk.webhook.js";
 import messageRoutes from "./routes/message.route.js";
+import { app, server } from "./lib/socket.js";
+import authRoutes from "./routes/auth.route.js";
 dotenv.config();
-const app = express();
 
 const PORT = process.env.PORT;
 const FRONTEND_URL = process.env.FRONTEND_URL;
@@ -40,7 +41,7 @@ if (fs.existsSync(publicDir)) {
   });
 }
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   connectDB();
   console.log(`Server is up and running on http://localhost:${PORT}`);
 });

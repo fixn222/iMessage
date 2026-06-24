@@ -7,7 +7,7 @@ import {
   sendMessages,
 } from "../controllers/message.controller.js";
 import { upload } from "../middleware/upload.middleware.js";
-const router = express.router();
+const router = express.Router();
 
 router.use(protectRoute);
 

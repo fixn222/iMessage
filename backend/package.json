@@ -21,6 +21,7 @@
     "express": "^5.2.1",
     "mongoose": "^9.7.1",
     "multer": "^2.2.0",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "socket.io": "^4.8.3"
   }
 }

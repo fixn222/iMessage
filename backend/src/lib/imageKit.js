@@ -1,5 +1,5 @@
 import ImageKit, { toFile } from "@imagekit/nodejs";
-
+import dotenv from "dotenv/config";
 const imagekit = new ImageKit({ privateKey: process.env.IMAGEKIT_PRIVATE_KEY });
 
 function hasImageKitConfig() {
